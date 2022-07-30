@@ -18,11 +18,11 @@ function resetGameStatus() {
     }
 }
 
-function resetgame1() {
-    $("#active-game").load(window.location.href + " #active-game");
-    // $("#winner-name").load(window.location.href + " #winner-name");
-    //$("#game-bord").load(window.location.href + " #game-bord");
-}
+//function resetgame1() {
+//$("#active-game").load(window.location.href + " #active-game");
+// $("#winner-name").load(window.location.href + " #winner-name");
+//$("#game-bord").load(window.location.href + " #game-bord");
+//}
 
 function newGame() {
 
@@ -32,7 +32,7 @@ function newGame() {
     }
 
     //$( "#here" ).load(window.location.href + " #here" );
-
+    resetGameStatus();
     activePlayerName.textContent = players[activePlayer].name;
     gameAreaEle.style.display = "block";
 }
