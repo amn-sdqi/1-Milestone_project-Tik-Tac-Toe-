@@ -5,6 +5,13 @@ body {
     background-color: rgb(247, 239, 247);
 }
 
+#logo {
+    height: 5rem;
+    width: 7.3rem;
+    display: inline-block ;
+    
+}
+
 #main-header {
     background-color: rgb(27, 69, 87);
     color: white;
