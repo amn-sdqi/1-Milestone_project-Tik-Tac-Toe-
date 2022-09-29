@@ -27,6 +27,7 @@ function startNewGame() {
 	resetGameStatus();
 
 	activePlayerNameElement.textContent = players[activePlayer].name;
+	footerElement.style.marginTop = "0";
 	gameAreaElement.style.display = "block";
 }
 

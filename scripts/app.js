@@ -27,6 +27,7 @@ const errorsOutputElement = document.getElementById("config-errors");
 const gameAreaElement = document.getElementById("active-game");
 const activePlayerNameElement = document.getElementById("active-player-name");
 const gameOverElement = document.getElementById("game-over");
+const footerElement=document.getElementById("main-footer")
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");

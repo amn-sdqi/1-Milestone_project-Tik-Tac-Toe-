@@ -37,3 +37,11 @@ body {
     background-color: rgb(201, 217, 252);
     border-color: transparent;
 }
+
+#main-footer {
+    background-color: rgb(27, 69, 87);
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+    margin-top: 30rem;
+}
