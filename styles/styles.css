@@ -3,13 +3,14 @@ body {
     font-family: 'Open-Sans', sans-serif;
     color: rgb(41, 43, 44);
     background-color: rgb(247, 239, 247);
+
 }
 
 #logo {
     height: 5rem;
     width: 7.3rem;
-    display: inline-block ;
-    
+    display: inline-block;
+
 }
 
 #main-header {
@@ -52,3 +53,130 @@ body {
     text-align: center;
     margin-top: 30rem;
 }
+
+
+/***** clock *****/
+#clock {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: auto auto auto auto;
+
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+#time {
+    
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle svg {
+    position: relative;
+    transform: rotate(270deg);
+}
+
+.circle:nth-child(1) svg {
+    width: 250px;
+    height: 250px;
+}
+
+.circle:nth-child(2) svg {
+    width: 210px;
+    height: 210px;
+}
+
+.circle:nth-child(3) svg {
+    width: 170px;
+    height: 170px;
+}
+
+circle {
+    height: 100%;
+    width: 100%;
+    fill: transparent;
+    stroke: var(--clr);
+    stroke-width: 5;
+    transform: translate(5px, 5px);
+    opacity: 0.25;
+}
+
+.circle:nth-child(1) svg circle {
+    stroke-dasharray: 10;
+
+}
+
+.circle:nth-child(2) svg circle {
+    stroke-dasharray: 30;
+
+}
+
+.circle:nth-child(3) svg circle {
+    stroke-dasharray: 50;
+
+}
+
+.dots {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+}
+
+.dots::before {
+    content: ' ';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr), 0 0 40px var(--clr), 0 0 60px var(--clr), 0 0 80px var(--clr);
+
+}
+
+.timeBx {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: rgb(69, 139, 149);
+    font-family: consolas;
+    gap: 15px;
+    font-size: 20.5px;
+    font-weight: bold;
+
+}
+
+#hrs::after,
+#mins::after {
+    content: ":";
+    position: absolute;
+}
+
+.ap {
+    transform: translateY(-15px);
+    font-size: 15px;
+}
+
+
+
+/***** End clock *****/
